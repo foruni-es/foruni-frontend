@@ -32,7 +32,7 @@ const InfoPage = () => {
                     En foruni tienes un foro general, un punto de encuentro para todos los miembros de la plataforma.
                 </p>
                 <p className="mt-2">
-                    Usando el buscador, puedes acceder al espacio exclusivo de tu universidad, donde compartir lo que quieras exclusivamente con miembros de tu universidad.
+                    Usando el buscador, puedes acceder al espacio exclusivo de tu universidad, donde compartir lo que quieras con miembros de tu universidad.
                 </p>
 
                 <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">Contacto</h2>
