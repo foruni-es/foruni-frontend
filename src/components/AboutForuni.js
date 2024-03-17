@@ -2,6 +2,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const AboutForuni = () => {
+    
     return (
         <section aria-labelledby="trending-heading">
             <div className="rounded-lg bg-white shadow">
