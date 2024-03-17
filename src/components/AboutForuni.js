@@ -31,7 +31,7 @@ const AboutForuni = () => {
                     </div>
                     <div className="mt-4">
                         <Link
-                            href="#"
+                            href="/info"
                             className="block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
                         >
                             Saber más
