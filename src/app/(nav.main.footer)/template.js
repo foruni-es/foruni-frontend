@@ -8,9 +8,8 @@ const HeaderMainFooter = ({ children }) => {
 
                 <Header />
 
-                <div className="py-4">
-                        { children }
-                </div>
+                { children }
+                
             </div>
 
             <Footer />

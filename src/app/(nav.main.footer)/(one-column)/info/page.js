@@ -1,7 +1,7 @@
 const InfoPage = () => {
 
     return (
-        <div className="bg-gray-100 px-6 py-6 lg:px-8">
+        <div className="bg-white px-6 pt-6 pb-9 lg:px-8">
             <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
 
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -40,8 +40,7 @@ const InfoPage = () => {
                     ¿Tienes alguna duda o propuesta? Estaremos encantados de atenderte a través de nuestro email (soporte@foruni.es) o a través de WhatsApp 
                     (+34 611 06 56 46)
                 </p>
-                
-                
+            
             </div>
         </div>
     )

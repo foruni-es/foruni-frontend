@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const navigation = {
     main: [
         { name: 'Aviso legal', href: '#' },
         { name: 'Política de privacidad', href: '#' },
         { name: 'Política de cookies', href: '#' },
         { name: 'Normas de la Comunidad', href: '#' },
-        { name: 'Sobre foruni', href: '#' },
+        { name: 'Sobre foruni', href: '/info' },
     ],
     social: [
         {
@@ -73,14 +75,14 @@ const navigation = {
   
 const Footer = () => {
     return (
-        <footer className="bg-white">
+        <footer className="bg-white border-t border-t-gray-200">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 lg:px-8">
                 <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                     {navigation.main.map((item) => (
                         <div key={item.name} className="pb-6">
-                            <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                            <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                                 {item.name}
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </nav>
