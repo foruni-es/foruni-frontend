@@ -12,17 +12,17 @@ const UniHeader = ({ name, shortName }) => {
             <h1 className="text-2xl font-bold tracking-tight text-gray-900">
             {
                 name === HOME ?
-                "Foro general"
+                "Canal general"
                 :
-                `Foro ${shortName.toUpperCase()}`
+                `Canal ${shortName.toUpperCase()}`
             }
             </h1>
             <p className="text-gray-500">
             {
                 name === HOME ?
-                "El foro de todos los estudiantes, docentes e investigadores de las universidades españolas."
+                "Un canal compartido por todos los estudiantes, docentes e investigadores de las universidades españolas."
                 :
-                `El foro de todos los estudiantes, docentes e investigadores de la ${name}.`
+                `El canal de todos los estudiantes, docentes e investigadores de la ${name}.`
             }
             </p>
         </div>
