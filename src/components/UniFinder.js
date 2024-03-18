@@ -42,12 +42,12 @@ const UniFinder = () => {
         <Combobox as="div">
             <div className="relative border rounded-md">
                 <MagnifyingGlassIcon
-                    className="hidden lg:inline-block pointer-events-none absolute left-4 top-2.5 h-5 w-5 text-gray-400"
+                    className="pointer-events-none absolute left-4 top-2.5 h-5 w-5 text-gray-400"
                     aria-hidden="true"
                 />
                 <Combobox.Input
-                    className="h-10 w-full border-0 bg-transparent pl-4 lg:pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
-                    placeholder="Buscar universidad"
+                    className="h-10 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                    placeholder="Buscar uni"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value) }
                 />

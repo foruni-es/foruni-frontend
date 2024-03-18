@@ -1,5 +1,8 @@
 'use client';
-import { HOME } from "@/constants";
+/* import { useRouter } from 'next/navigation'; */
+
+import { HOME } from '@/constants';
+import { BuildingLibraryIcon, HomeIcon } from '@heroicons/react/24/outline';
 
 const UniHeader = ({ name, shortName }) => {
 
@@ -7,26 +10,21 @@ const UniHeader = ({ name, shortName }) => {
 
     return (
         <div className="bg-white shadow sm:rounded-lg p-4 mb-2">
-            <h1 className="text-2xl font-bold tracking-tight text-gray-900 text-center">
+            <h1 className="text-2xl font-bold tracking-tight text-gray-900">
             {
                 name === HOME ?
-                "Foro general"
+                <>  
+                    <HomeIcon className="h-6 w-6 mr-2 mb-1 inline-block" aria-hidden="true" />
+                    Inicio
+                </>
                 :
                 <>
+                    <BuildingLibraryIcon className="h-6 w-6 mr-2 mb-1 inline-block" aria-hidden="true" />
                     {`Foro ${shortName.toUpperCase()}`}
-                    {/* <div className="flex flex-row justify-center items-center">  
-                        <div 
-                            className="p-2 inline-block mr-2 hover:cursor-pointer rounded-full hover:bg-gray-200"
-                            onClick={ () => router.push(MAIN_URL) }
-                        >
-                            <ArrowLeftIcon className="h-5 w-5" aria-hidden="true" />
-                        </div>
-                        foruni/{shortName.toUpperCase()}
-                    </div> */}
                 </>
             }
             </h1>
-            <p className="text-gray-500 text-center">
+            <p className="text-gray-500">
             {
                 name === HOME ?
                 "El foro de todos los estudiantes, docentes e investigadores de las universidades españolas"
