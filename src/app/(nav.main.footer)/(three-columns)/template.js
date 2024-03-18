@@ -4,7 +4,7 @@ import AboutForuni from '@/components/AboutForuni';
 
 const ThreeColumns = ({ children }) => {
     return (
-        <div className="mt-4 mx-auto max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-8 lg:px-8">
+        <div className="my-4 mx-auto max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-8 lg:px-8">
 
             <div className="hidden lg:col-span-3 lg:block xl:col-span-2">
                 <SideNavbar />

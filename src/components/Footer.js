@@ -5,7 +5,7 @@ const navigation = {
         { name: 'Aviso legal', href: '#' },
         { name: 'Política de privacidad', href: '#' },
         { name: 'Política de cookies', href: '#' },
-        { name: 'Normas de la Comunidad', href: '#' },
+        { name: 'Normas de la Comunidad', href: '/normas' },
         { name: 'Sobre foruni', href: '/info' },
     ],
     social: [
