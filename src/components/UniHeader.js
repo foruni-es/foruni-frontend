@@ -19,7 +19,7 @@ const UniHeader = ({ name, shortName }) => {
                 </>
                 :
                 <>
-                    <BuildingLibraryIcon className="h-7 w-7 mr-1.5 mb-2 inline-block" aria-hidden="true" />
+                    <BuildingLibraryIcon className="h-7 w-7 mr-2 mb-1.5 inline-block" aria-hidden="true" />
                     {`Foro ${shortName.toUpperCase()}`}
                 </>
             }
