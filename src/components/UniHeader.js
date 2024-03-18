@@ -20,7 +20,7 @@ const UniHeader = ({ name, shortName }) => {
             <p className="text-gray-500">
             {
                 name === HOME ?
-                "Un canal compartido por todos los estudiantes, docentes e investigadores de las universidades españolas."
+                "El canal compartido por todos los estudiantes, docentes e investigadores de las universidades españolas."
                 :
                 `El canal de todos los estudiantes, docentes e investigadores de la ${name}.`
             }
