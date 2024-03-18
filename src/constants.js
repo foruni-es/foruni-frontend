@@ -8,7 +8,7 @@ export const ANSWERS = "answers";
 export const LIKES = "likes";
 
 export const HOME = "inicio";
-export const MAIN_URL = '/';
+export const MAIN_URL = '/inicio';
 
 export const CLIENT_COMPONENT = true;
 

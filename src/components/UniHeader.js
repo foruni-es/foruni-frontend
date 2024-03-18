@@ -2,7 +2,6 @@
 /* import { useRouter } from 'next/navigation'; */
 
 import { HOME } from '@/constants';
-import { BuildingLibraryIcon, HomeIcon } from '@heroicons/react/24/outline';
 
 const UniHeader = ({ name, shortName }) => {
 
@@ -13,23 +12,17 @@ const UniHeader = ({ name, shortName }) => {
             <h1 className="text-2xl font-bold tracking-tight text-gray-900">
             {
                 name === HOME ?
-                <>  
-                    <HomeIcon className="h-6 w-6 mr-2 mb-1 inline-block" aria-hidden="true" />
-                    Inicio
-                </>
+                "Foro general"
                 :
-                <>
-                    <BuildingLibraryIcon className="h-6 w-6 mr-2 mb-1 inline-block" aria-hidden="true" />
-                    {`Foro ${shortName.toUpperCase()}`}
-                </>
+                `Foro ${shortName.toUpperCase()}`
             }
             </h1>
             <p className="text-gray-500">
             {
                 name === HOME ?
-                "El foro de todos los estudiantes, docentes e investigadores de las universidades españolas"
+                "El foro de todos los estudiantes, docentes e investigadores de las universidades españolas."
                 :
-                `El foro de todos los estudiantes, docentes e investigadores de la ${name}`
+                `El foro de todos los estudiantes, docentes e investigadores de la ${name}.`
             }
             </p>
         </div>
