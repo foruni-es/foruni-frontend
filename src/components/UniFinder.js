@@ -27,7 +27,7 @@ const UniFinder = () => {
 
             } else setUniversities([]);
             
-        }, 100);
+        }, 250);
     
         return () => clearTimeout(delayDebounceFn);
 
