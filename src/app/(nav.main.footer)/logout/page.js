@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import APIConnection from '@/utils/APIConnection';
 import Loading from '@/components/Loading';
 import Alert from '@/components/Alert';
+import Spinner from '@/components/Spinner';
 
 const LogoutPage = () => {
 
@@ -34,9 +35,14 @@ const LogoutPage = () => {
     }, []);
 
     return (
-        <Loading loading={loading}>
+        <>
+        {
+            loading ?
+            <Spinner />
+            :
             <Alert status={ApiResponse.status} message={ApiResponse.message} />
-        </Loading>
+        }
+        </>
     )
 }
 
