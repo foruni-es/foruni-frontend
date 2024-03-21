@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-const Spinner = () => {
+const Spinner = ({ additionalClass = '' }) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -19,7 +19,7 @@ const Spinner = () => {
         <>
         { 
             visible && 
-            <div className="loading-spinner block mx-auto mb-10"></div> 
+            <div className={`loading-spinner block mx-auto mb-10 ${additionalClass}`}></div> 
         }
         </>
     )

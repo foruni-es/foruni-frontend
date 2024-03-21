@@ -22,9 +22,9 @@ const MI_PERFIL = 'Mi perfil'
 const navigation = [
     { name: INICIO, href: MAIN_URL, icon: HomeIcon, current: true },
     { name: MI_UNI, href: '#', icon: BuildingLibraryIcon, current: false },
-    { name: PUBLICADOS, href: '#', icon: PencilSquareIcon, current: false },
-    { name: GUARDADOS, href: '#', icon: BookmarkIcon, current: false },
-    { name: MI_PERFIL, href: '#', icon: UserIcon, current: false }
+    { name: PUBLICADOS, href: '/publicados', icon: PencilSquareIcon, current: false },
+    { name: GUARDADOS, href: '/guardados', icon: BookmarkIcon, current: false },
+    { name: MI_PERFIL, href: '/perfil', icon: UserIcon, current: false }
 ]
 
 const SideNavbar = () => {

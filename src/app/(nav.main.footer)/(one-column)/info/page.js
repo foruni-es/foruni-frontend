@@ -1,3 +1,5 @@
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
+
 const InfoPage = () => {
 
     return (
@@ -14,7 +16,14 @@ const InfoPage = () => {
 
                 <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">¿Qué es foruni?</h2>
                 <p className="mt-2">
-                    foruni es una aplicación web de mensajería para universidades, gratuita y de código abierto.
+                    foruni es una aplicación web de mensajería para universidades, gratuita y 
+                        <a className="ml-1 underline" href='https://github.com/foruni-es' target="__black">
+                            de código abierto 
+                            <ArrowTopRightOnSquareIcon
+                                className="h-5 w-5 flex-none text-gray-400 group-hover:text-gray-500 inline-block ml-1 pb-1"
+                                aria-hidden="true"
+                            />
+                        </a>.
                 </p>
 
                 <h2 className="mt-10 text-2xl font-bold tracking-tight text-gray-900">¿Qué aporta foruni a las universidades?</h2>

@@ -1,12 +1,15 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 import APIConnection from '@/utils/APIConnection';
-import Loading from '@/components/Loading';
 import Alert from '@/components/Alert';
+import Spinner from '@/components/Spinner';
 
 const SignupForm = () => {
+
+    const router = useRouter();
 
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
@@ -31,10 +34,12 @@ const SignupForm = () => {
 
         setApiResponse(response);   
 
+        if (response.status === 200) router.push('/validacion/completada');
     }
 
     return (
-        <Loading loading={loading}>
+        <>
+            { loading && <Spinner /> }
 
             <Alert status={ApiResponse.status} message={ApiResponse.message} />
 
@@ -45,7 +50,10 @@ const SignupForm = () => {
                             Email universitario
                         </label>
                         {/* <div className="text-sm">
-                            <Link href="#" className="font-semibold text-blue-600 hover:text-blue-500">
+                            <Link 
+                                href="#" 
+                                className="font-semibold text-blue-600 hover:text-blue-500"
+                            >
                                 Ver emails válidos
                             </Link>
                         </div>  */}
@@ -134,7 +142,7 @@ const SignupForm = () => {
                     Inicia sesión aquí.
                 </Link>
             </p>
-        </Loading>
+        </>
     )
 }
 
