@@ -34,7 +34,7 @@ const SignupForm = () => {
 
         setApiResponse(response);   
 
-        if (response.status === 200) router.push('/validacion/completada');
+        if (response.status === 200) router.replace('/validacion/completada');
     }
 
     return (

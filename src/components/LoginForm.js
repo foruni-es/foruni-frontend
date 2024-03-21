@@ -30,7 +30,7 @@ const LoginForm = () => {
 
         if (response.status === 200) {
             localStorage.setItem('user', JSON.stringify(response.user));
-            router.push('/inicio');
+            router.replace('/inicio');
         }
         
         setApiResponse(response);      
