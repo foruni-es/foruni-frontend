@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import APIConnection from '@/utils/APIConnection';
-import Loading from '@/components/Loading';
 import Alert from '@/components/Alert';
 import Spinner from '@/components/Spinner';
 
