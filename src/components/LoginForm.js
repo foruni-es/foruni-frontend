@@ -39,9 +39,13 @@ const LoginForm = () => {
     return (
         <>
 
-            { loading && <Spinner /> }
+            { loading && <Spinner additionalClass="mb-10" /> }
 
-            <Alert status={ApiResponse.status} message={ApiResponse.message} />
+            <Alert 
+                status={ApiResponse.status} 
+                message={ApiResponse.message} 
+                additionalClass="mb-10"
+            />
 
             <form className="space-y-6" onSubmit={onSubmit}>
                 <div>

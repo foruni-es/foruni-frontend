@@ -1,7 +1,7 @@
 import APIConnection from '@/utils/APIConnection';
-import Threads from '@/components/Threads';
-import ThreadBar from '@/components/ThreadBar';
 import AsyncHandler from '@/components/AsyncHandler';
+import NewThreadForm from '@/components/NewThreadForm';
+import Threads from '@/components/Threads';
 
 const UniThreads = async ({ universityId }) => {
     
@@ -9,7 +9,7 @@ const UniThreads = async ({ universityId }) => {
 
     return (
         <AsyncHandler response={response}>
-            <ThreadBar />
+            <NewThreadForm universityId={universityId} />
             <Threads threads={response.threads} />
         </AsyncHandler>
     )

@@ -1,7 +1,7 @@
 export function middleware(request) {
 
-    const currentUser = request.cookies.get('user')?.value;
-    
+    const currentUser = request.cookies.get('user') ? true : false;
+
     if (!currentUser && request.nextUrl.pathname.startsWith('/publicados')) 
         return Response.redirect(new URL('/login', request.url));
 

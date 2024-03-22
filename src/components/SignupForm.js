@@ -24,6 +24,7 @@ const SignupForm = () => {
         e.preventDefault();
 
         setLoading(true);
+        setApiResponse({ status: 200, message: null });
         const response = await APIConnection('POST', '/users/register', {
             email,
             name,
@@ -39,9 +40,13 @@ const SignupForm = () => {
 
     return (
         <>
-            { loading && <Spinner /> }
+            { loading && <Spinner additionalClass="mb-10" /> }
 
-            <Alert status={ApiResponse.status} message={ApiResponse.message} />
+            <Alert 
+                status={ApiResponse.status} 
+                message={ApiResponse.message} 
+                additionalClass="mb-10"
+            />
 
             <form className="space-y-6" onSubmit={onSubmit}>
                 <div>

@@ -59,10 +59,7 @@ const ValidationCompletedPage = () => {
                     <p className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm text-center">
                     {
                         ApiResponse.status === 200 ? 
-                        <>
-                            ¡Todo correcto!
-                            <Link href='/login' className='ml-1 underline' replace>Inicia sesión pulsando aquí.</Link>
-                        </>
+                        `¡Todo correcto! Ya puedes iniciar sesión en tu cuenta.`
                         :
                         `Parece que se ha producido un error al validar tu cuenta. Inténtalo de nuevo en unos instantes.
                         Si el error persiste contacta con soporte@foruni.es`

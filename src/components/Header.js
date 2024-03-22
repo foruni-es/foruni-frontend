@@ -144,18 +144,16 @@ const Header = () => {
                         <Popover.Panel as="nav" className="lg:hidden" aria-label="Global">
                             <div className="mx-auto max-w-3xl space-y-1 px-2 pb-3 pt-2 sm:px-4">
                                 {navigation.map((item) => (
-                                <div
-                                    key={item.name}
-                                    href={item.href}
-                                    aria-current={item.current ? 'page' : undefined}
-                                    className={
-                                        addClassName(currentItem(item) ? 'bg-gray-100 text-gray-900' : 'hover:bg-gray-50',
-                                        'block rounded-md py-2 px-3 text-base font-medium'
-                                    )}
-                                    onClick={ () => navigate(item) }
-                                >
-                                    {item.name}
-                                </div>
+                                    <Popover.Button
+                                        key={item.name}
+                                        className={
+                                            addClassName(currentItem(item) ? 'bg-gray-100 text-gray-900' : 'hover:bg-gray-50',
+                                            'block rounded-md py-2 px-3 text-base font-medium'
+                                        )}
+                                        onClick={ () => navigate(item) }
+                                    >
+                                        {item.name}
+                                    </Popover.Button>
                                 ))}
                             </div>
 
@@ -167,11 +165,12 @@ const Header = () => {
                                     Cerrar sesión
                                 </Link>
 
-                               {/*  <div className="mt-6 flex justify-center">
-                                    <a href="#" className="text-base font-medium text-gray-900 hover:underline">
-                                        Contribuir
-                                    </a>
-                                </div> */}
+                                <Link
+                                    href="/info"
+                                    className="flex w-full items-center justify-center mt-6 font-medium text-gray-900 underline"
+                                >
+                                    Sobre foruni
+                                </Link>
                             </div>
                         </Popover.Panel>
                     </>

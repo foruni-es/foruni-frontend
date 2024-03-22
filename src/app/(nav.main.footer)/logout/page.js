@@ -37,9 +37,11 @@ const LogoutPage = () => {
         <>
         {
             loading ?
-            <Spinner />
+            <Spinner additionalClass="mt-10" />
             :
-            <Alert status={ApiResponse.status} message={ApiResponse.message} />
+            <div className="container mx-auto mt-10 flex justify-center">
+                <Alert status={ApiResponse.status} message={ApiResponse.message} />
+            </div>
         }
         </>
     )
